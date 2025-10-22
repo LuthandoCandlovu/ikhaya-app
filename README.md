@@ -38,6 +38,38 @@ Khaya is the intelligent assistant that makes student accommodation life seamles
 **Khaya answers all these - through simple chat or voice commands.**
 
 </div>
+## 📱 App Architecture
+
+```mermaid
+graph TD
+    A[🎓 Student User] --> B[📱 Khaya Mobile App]
+    B --> C[🗣️ Voice Input]
+    B --> D[💬 Chat Interface]
+    B --> E[📱 UI Components]
+    
+    C --> F[🎤 Speech Recognition]
+    D --> F
+    F --> G[🤖 AI Processing]
+    
+    G --> H[🚀 Backend API]
+    H --> I[🔥 Firebase Services]
+    
+    I --> J[📊 Firestore DB]
+    I --> K[🔐 Auth]
+    I --> L[📁 Storage]
+    
+    H --> M[🧠 AI Services]
+    M --> N[OpenAI GPT]
+    M --> O[Dialogflow]
+    
+    P[👨‍🏫 Staff Portal] --> H
+    Q[👑 Admin Dashboard] --> H
+    
+    style A fill:#e1f5fe
+    style B fill:#f3e5f5
+    style H fill:#fff3e0
+    style I fill:#ffebee
+```
 
 ## ✨ Features
 
